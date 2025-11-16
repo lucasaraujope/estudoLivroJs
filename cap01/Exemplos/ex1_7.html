@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mesa = prompt("Informe qual o número da mesa que será calculada a comanda");
+        const valorJantar = Number(prompt("Informe o valor do Jantar da mesa"));
+        const taxaGarcom = Number(prompt("Informe a porcetagem da taxa"))//geralmente [e 10% mas quero deixar dinâmico
+
+        const valorTotal = valorJantar + (valorJantar * (taxaGarcom / 100))
+        alert(`Comanda da mesa ${mesa}. O valor do jantar foi de R$${valorJantar.toFixed(2)}, a taxa é de ${taxaGarcom}% do valor da comanda. O valor total a pagar é de: R$${valorTotal.toFixed(2)}`)
+    </script>
+</body>
+</html>

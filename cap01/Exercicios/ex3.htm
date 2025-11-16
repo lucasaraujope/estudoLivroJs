@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const valorProduto = Number(prompt("Informe o valor do produto"));
+        const desconto = Number(prompt("Informe o valor do desconto"));
+        const valorAvista = valorProduto - (valorProduto * (desconto / 100));
+        const parcelas = Number(prompt("Se o valor vaiser parcelado, informe a quantidade de parcelas"))
+        if(parcelas <= 1 ){
+            alert(`Preço do produto: ${valorProduto}\nValor a vista: ${valorAvista}\nValor parcelado: não será parcelado`)    
+        } else{
+            const valorParcelado = valorProduto / parcelas
+            alert(`Preço do produto: R$${valorProduto.toFixed(2)}\nValor a vista: R$${valorAvista.toFixed(2)}\nValor parcelado: R$${valorParcelado.toFixed(2)}`)
+        }
+        
+
+        
+    </script>
+</body>
+</html>
